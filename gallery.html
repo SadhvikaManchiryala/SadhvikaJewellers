@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Sadhvika Jewellers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+<div class="loader" id="loader"></div>
+
+<nav class="navbar">
+  <div class="nav-brand">Sadhvika Jewellers</div>
+  <div class="nav-toggle">&#9776;</div>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#collections">Collections</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="section" id="gallery">
+  <h2>Jewellery Gallery</h2>
+  <!-- Gallery Grid -->
+<!-- GALLERY GRID -->
+<div class="gallery-grid">
+  <a href="#img1" onclick="openLightbox(0)"><img src="images/gallery1.jpg" alt="Jewellery 1"></a>
+  <a href="#img2" onclick="openLightbox(1)"><img src="images/gallery2.jpg" alt="Jewellery 2"></a>
+  <a href="#img3" onclick="openLightbox(2)"><img src="images/gallery3.jpg" alt="Jewellery 3"></a>
+  <a href="#img4" onclick="openLightbox(3)"><img src="images/gallery4.jpg" alt="Jewellery 4"></a>
+  <a href="#img5" onclick="openLightbox(4)"><img src="images/gallery5.jpg" alt="Jewellery 5"></a>
+  <a href="#img6" onclick="openLightbox(5)"><img src="images/gallery6.jpg" alt="Jewellery 6"></a>
+  <a href="#img7" onclick="openLightbox(6)"><img src="images/gallery7.jpg" alt="Jewellery 7"></a>
+  <a href="#img8" onclick="openLightbox(7)"><img src="images/gallery8.jpg" alt="Jewellery 8"></a>
+  <a href="#img9" onclick="openLightbox(8)"><img src="images/gallery9.jpg" alt="Jewellery 9"></a>
+  <a href="#img10" onclick="openLightbox(9)"><img src="images/gallery10.jpg" alt="Jewellery 10"></a>
+  <a href="#img11" onclick="openLightbox(10)"><img src="images/gallery11.jpg" alt="Jewellery 11"></a>
+  <a href="#img12" onclick="openLightbox(11)"><img src="images/gallery12.jpg" alt="Jewellery 12"></a>
+</div>
+
+<!-- LIGHTBOX POPUPS WITH CAPTIONS AND ARROWS -->
+<div id="img1" class="lightbox">
+  <a href="#" class="close" onclick="closeLightbox()">&times;</a>
+  <a class="nav left" onclick="showPrev()">&#10094;</a>
+  <img src="images/gallery1.jpg" alt="">
+  <p class="caption">Jewellery 1</p>
+  <a class="nav right" onclick="showNext()">&#10095;</a>
+</div>
+<div id="img2" class="lightbox">
+  <a href="#" class="close" onclick="closeLightbox()">&times;</a>
+  <a class="nav left" onclick="showPrev()">&#10094;</a>
+  <img src="images/gallery2.jpg" alt="">
+  <p class="caption">Jewellery 2</p>
+  <a class="nav right" onclick="showNext()">&#10095;</a>
+</div>
+<!-- Repeat for all 12 -->
+<div id="img3" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery3.jpg" alt=""><p class="caption">Jewellery 3</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img4" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery4.jpg" alt=""><p class="caption">Jewellery 4</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img5" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery5.jpg" alt=""><p class="caption">Jewellery 5</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img6" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery6.jpg" alt=""><p class="caption">Jewellery 6</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img7" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery7.jpg" alt=""><p class="caption">Jewellery 7</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img8" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery8.jpg" alt=""><p class="caption">Jewellery 8</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img9" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery9.jpg" alt=""><p class="caption">Jewellery 9</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img10" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery10.jpg" alt=""><p class="caption">Jewellery 10</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img11" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery11.jpg" alt=""><p class="caption">Jewellery 11</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+<div id="img12" class="lightbox"><a href="#" class="close" onclick="closeLightbox()">&times;</a><a class="nav left" onclick="showPrev()">&#10094;</a><img src="images/gallery12.jpg" alt=""><p class="caption">Jewellery 12</p><a class="nav right" onclick="showNext()">&#10095;</a></div>
+
+<!-- SCRIPTS -->
+<script>
+  const images = [
+    "gallery1.jpg", "gallery2.jpg", "gallery3.jpg", "gallery4.jpg",
+    "gallery5.jpg", "gallery6.jpg", "gallery7.jpg", "gallery8.jpg",
+    "gallery9.jpg", "gallery10.jpg", "gallery11.jpg", "gallery12.jpg"
+  ];
+  let currentIndex = 0;
+  let slideshowInterval;
+
+  function openLightbox(index) {
+    closeLightbox();
+    const id = `img${index + 1}`;
+    window.location.hash = id;
+    currentIndex = index;
+    startSlideshow();
+  }
+
+  function closeLightbox() {
+    clearInterval(slideshowInterval);
+    window.location.hash = "";
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    openLightbox(currentIndex);
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    openLightbox(currentIndex);
+  }
+
+  function startSlideshow() {
+    clearInterval(slideshowInterval);
+    slideshowInterval = setInterval(showNext, 4000);
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (window.location.hash.includes("img")) {
+      if (e.key === "ArrowRight") showNext();
+      if (e.key === "ArrowLeft") showPrev();
+      if (e.key === "Escape") closeLightbox();
+    }
+  });
+</script>
+</section>
+<section class="contact-bar">
+  <h2>Contact Us</h2>
+  <p>📞 <a href="tel:9908444515">9908444515</a> | <a href="tel:9550655124">9550655124</a></p>
+  <p>📧 <a href="mailto:manchiryalaramesh1@gmail.com">manchiryalaramesh1@gmail.com</a></p>
+  <p>📧 <a href="mailto:manchiryalasricharan7@gmail.com">manchiryalasricharan7@gmail.com</a></p>
+  <p>📍 Armur, Nizamabad, Telangana, India – 503224</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sadhvika Jewellers. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('show');
+  });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+  });
+</script>
+</body>
+</html>
